@@ -10,24 +10,26 @@
 */
 
 
-function handValue (hand) {
-  let Value = i;
-  let total = (Value + hand[i]);
+//The hand is an array of numbers. I want to write a function that loops through the items in the array, assigns each a number value and then totals those numbers.
+
+
+let hand = [];
+
+function handSum(){
+  let output = (value += hand[]);
+  let value = i;
   for (var i = 0; i < hand.length; i++) {
-    if(i <= "10"){
-      Value = i;
-    if ((i="K") || (i="Q") || (i="J")){
-      Value = "10";
-    }
-    if (i="A" && (total <= "10")){
-      Value = "11";
-    }
-    if (i="A" && (total >= "18")){
-      Value = "1";
-    }
+    if(i <= '10'){
+      value = Number(i);
+    }else if ((i='K') || (i='Q') || (i='J')){
+      value = 10;
+    }else if (i='A' && (output <= 10)){
+      value = 11;
+    }else {
+      value = 1;
     }
   }
-  return handValue;
+  return output;
 }
 
 
